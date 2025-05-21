@@ -445,6 +445,8 @@
           <h2>Portfolio</h2>
         </div>
 
+        
+
         <div class="row">
           <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
             <ul id="portfolio-flters">
@@ -457,6 +459,36 @@
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
+          <div class="modal fade" id="portfolioModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+              <div class="modal-content position-relative">
+                
+                <!-- Close button -->
+                <button type="button" class="btn-close position-absolute" style="top: 10px; right: 10px; z-index: 1050;" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <div class="modal-body container">
+                  <div class="row align-items-center">
+                    
+                    <!-- Text Content -->
+                    <div class="col-12 col-md-7 mb-4 mb-md-0">
+                      <h4 id="modal-title"></h4>
+                      <p id="modal-description"></p>
+                      <ul id="modal-tech" class="ps-3"></ul>
+                    </div>
+
+                    <!-- Image Content -->
+                    <div class="col-12 col-md-5 text-center">
+                      <img id="modal-image" src="" alt="Portfolio Image" class="img-fluid rounded shadow-sm w-100"  style="max-height: 600px; object-fit: contain;"/>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio Item -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/binus.png" class="img-fluid" alt="">
@@ -464,20 +496,38 @@
                 <h4>Binus Maya (Neksus)</h4>
                 <p>Web Apps</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/binus.png" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-zoom-in"></i></a>
+                  <a href="#" 
+                    class="portfolio-lightbox-trigger" 
+                    data-bs-toggle="modal" data-bs-target="#portfolioModal"
+                    data-title="BinusMaya - Neksus"
+                    data-description="BinusMaya - Neksus is a comprehensive web portal designed for university students to access a wide range of academic and non-academic information. One of its key features includes personalized career guidance aligned with each student’s field of study."
+                    data-tech=".NET for robust backend development|Microsoft Azure for cloud infrastructure and deployment|Node.js for scalable server-side scripting|REST API for seamless system integration and data exchange"
+                    data-image="assets/img/portfolio/binus.png">
+                    <i class="bx bx-zoom-in"></i>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/juber.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Juber</h4>
                 <p>Mobile Apps</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/juber.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-zoom-in"></i></a>
+                  <a href="#" 
+                    class="portfolio-lightbox-trigger" 
+                    data-bs-toggle="modal" data-bs-target="#portfolioModal"
+                    data-title="Juber Super Apps"
+                    data-description="Juber Super Apps is a comprehensive digital platform offering a wide range of services to users across Indonesia. These services include mobile credit top-ups, data package purchases, electricity token purchases, online shopping, food delivery, ride-hailing, package delivery, multi-bill payments, as well as flight, train, and hotel bookings — all in one seamless application."
+                    data-tech="Flutter & Dart for cross-platform mobile app development|REST API for efficient and reliable communication with backend services"
+                    data-image="assets/img/portfolio/juber.jpg">
+                    <i class="bx bx-zoom-in"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -490,7 +540,16 @@
                 <h4>iMEXS</h4>
                 <p>Mobile Apps</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/imexs.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-zoom-in"></i></a>
+                  <!-- <a href="assets/img/portfolio/imexs.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-zoom-in"></i></a> -->
+                   <a href="#" 
+                    class="portfolio-lightbox-trigger" 
+                    data-bs-toggle="modal" data-bs-target="#portfolioModal"
+                    data-title="iMEXS"
+                    data-description="iMEXS is a logistics management application designed to track and document the entire chicken processing workflow — from the dirty area to the clean area — ensuring traceability and operational efficiency in poultry manufacturing. Technologies used in the development include:"
+                    data-tech="Flutter & Dart for building a responsive cross-platform mobile application|REST API (Python) for backend services and data handling|Oracle Database for robust and reliable data storage"
+                    data-image="assets/img/portfolio/imexs.jpg">
+                    <i class="bx bx-zoom-in"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -503,7 +562,16 @@
                 <h4>Qoinpay</h4>
                 <p>Mobile Apps</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/qoinpay.png" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-zoom-in"></i></a>
+                  <!-- <a href="assets/img/portfolio/qoinpay.png" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-zoom-in"></i></a> -->
+                  <a href="#" 
+                    class="portfolio-lightbox-trigger" 
+                    data-bs-toggle="modal" data-bs-target="#portfolioModal"
+                    data-title="Qoinpay"
+                    data-description="Qoinpay is a versatile application that allows users to seamlessly exchange crypto assets for a wide range of digital products within a unified platform. The app also features an integrated crypto wallet, enabling smooth transfers across multiple cryptocurrencies. The technology stack includes:"
+                    data-tech="Flutter & Dart for cross-platform development|Geolocation services for enhanced user experience|Firebase Cloud Messaging for real-time notifications|FREERASP for security enhancements|Comprehensive Crypto Wallet integration|RESTful API architecture|Precise UI implementation based on Figma designs"
+                    data-image="assets/img/portfolio/qoinpay.png">
+                    <i class="bx bx-zoom-in"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -516,7 +584,16 @@
                 <h4>Qoin</h4>
                 <p>Mobile Apps</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/qoin.png" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-zoom-in"></i></a>
+                  <!-- <a href="assets/img/portfolio/qoin.png" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-zoom-in"></i></a> -->
+                  <a href="#" 
+                    class="portfolio-lightbox-trigger" 
+                    data-bs-toggle="modal" data-bs-target="#portfolioModal"
+                    data-title="Qoin"
+                    data-description="Qoin is an Indonesian digital wallet and e-money application designed to facilitate a variety of financial transactions, including PPOB (Payment Point Online Bank) services. The app also integrates Digital ID functionality to enhance user verification and security. Technologies utilized:"
+                    data-tech="Flutter & Dart for cross-platform mobile development|Modular architecture with SDK integration|Firebase Cloud Messaging for real-time notifications|FREERASP for security enhancements|RESTful API architecture|Precise UI implementation based on Figma designs"
+                    data-image="assets/img/portfolio/qoin.png">
+                    <i class="bx bx-zoom-in"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -529,7 +606,16 @@
                 <h4>GoBlast CMS</h4>
                 <p>Web Apps</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/goblast_cms.png" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-zoom-in"></i></a>
+                  <!-- <a href="assets/img/portfolio/goblast_cms.png" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-zoom-in"></i></a> -->
+                  <a href="#" 
+                    class="portfolio-lightbox-trigger" 
+                    data-bs-toggle="modal" data-bs-target="#portfolioModal"
+                    data-title="GoBlast CMS"
+                    data-description="GoBlast is a comprehensive administrative web application designed to support legislative election campaigns. The platform facilitates management of surveys, volunteer databases, witness records, and coordinator assignments, streamlining election processes. It incorporates a robust Role-Based Access Control (RBAC) system to ensure secure and granular access management. Technology stack:"
+                    data-tech="Frontend: HTML, CSS, PHP|Backend API: Laravel|UI/UX: Developed from Figma design assets"
+                    data-image="assets/img/portfolio/goblast_cms.png">
+                    <i class="bx bx-zoom-in"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -542,7 +628,16 @@
                 <h4>Kebut</h4>
                 <p>Mobile Apps</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/kebut express.png" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-zoom-in"></i></a>
+                  <!-- <a href="assets/img/portfolio/kebut express.png" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-zoom-in"></i></a> -->
+                  <a href="#" 
+                    class="portfolio-lightbox-trigger" 
+                    data-bs-toggle="modal" data-bs-target="#portfolioModal"
+                    data-title="Kebut Express"
+                    data-description="Kebut Express is a robust courier application developed to streamline package delivery services. It enables users to efficiently send and track shipments, as well as accurately estimate shipping costs in real-time. The app is designed to enhance logistics operations by providing reliable geolocation tracking and instant notifications. Technologies:"
+                    data-tech="Flutter & Dart for cross-platform mobile development|Geolocation services to enable real-time shipment tracking|Firebase Cloud Messaging for push notifications and user engagement|RESTful API integration for seamless backend communication|UI/UX design implemented from detailed Figma prototypes to ensure intuitive user experience"
+                    data-image="assets/img/portfolio/kebut express.png">
+                    <i class="bx bx-zoom-in"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -555,7 +650,16 @@
                 <h4>Finpay SDK</h4>
                 <p>Mobile Apps</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/finpay.png" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-zoom-in"></i></a>
+                  <!-- <a href="assets/img/portfolio/finpay.png" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-zoom-in"></i></a> -->
+                  <a href="#" 
+                    class="portfolio-lightbox-trigger" 
+                    data-bs-toggle="modal" data-bs-target="#portfolioModal"
+                    data-title="Finpay SDK"
+                    data-description="FinPay SDK is a software development kit designed to streamline maintenance and service processes through efficient documentation and management. It integrates seamlessly with Flutter via Method Channel to enhance cross-platform functionality. Technology stack:"
+                    data-tech="Kotlin|Firebase Cloud Messaging|REST API|Flutter Plugin (Method Channel)|UI design based on Figma"
+                    data-image="assets/img/portfolio/finpay.png">
+                    <i class="bx bx-zoom-in"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -568,7 +672,16 @@
                 <h4>MyDoctors</h4>
                 <p>Mobile Apps</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/MyDoctors.png" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-zoom-in"></i></a>
+                  <!-- <a href="assets/img/portfolio/MyDoctors.png" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-zoom-in"></i></a> -->
+                   <a href="#" 
+                    class="portfolio-lightbox-trigger" 
+                    data-bs-toggle="modal" data-bs-target="#portfolioModal"
+                    data-title="MyDoctors"
+                    data-description="MyDoctors This is an application designed for healthcare consultations, allowing users to make reservations or book appointments with registered doctors. Booking is based on the schedules set by doctors through a separate application. Doctors in the app are categorized based on their specialties. Additionally, users can purchase medicines from partnered pharmacies through the application. The technologies used are:"
+                    data-tech="Flutter & Dart|Web browser support for video and voice calls|Firebase Cloud Messaging|REST API|Laravel for API development|Payment Gateway integration with MIDTRANS, BCA, and KREDIVO|UI Slicing from Figma"
+                    data-image="assets/img/portfolio/MyDoctors.png">
+                    <i class="bx bx-zoom-in"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -581,7 +694,16 @@
                 <h4>MyDoctors for Doctors</h4>
                 <p>Mobile Apps</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/MDoctors.png" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-zoom-in"></i></a>
+                  <!-- <a href="assets/img/portfolio/MDoctors.png" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-zoom-in"></i></a> -->
+                   <a href="#" 
+                    class="portfolio-lightbox-trigger" 
+                    data-bs-toggle="modal" data-bs-target="#portfolioModal"
+                    data-title="MyDoctors for Doctors"
+                    data-description="MyDoctors for Doctors This is an application designed for doctors to conduct consultations, determine feasible schedules, and write prescriptions for patients. The technologies used include:"
+                    data-tech="Flutter & Dart for building a responsive user interface that works on both Android and iOS platforms|Web browser for video and voice calls, enabling direct interaction between doctors and patients.|Firebase Cloud Messaging for push notifications to inform patients or doctors about consultation schedules or prescriptions.|REST-API for communication between the front-end application and the server, handling patient data, schedules, and prescriptions.|Laravel for building the API backend.|Payment Gateway integration with MIDTRANS, BCA, and KREDIVO|UI Slicing from Figma"
+                    data-image="assets/img/portfolio/MDoctors.png">
+                    <i class="bx bx-zoom-in"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -594,7 +716,16 @@
                 <h4>MyLawyers</h4>
                 <p>Mobile Apps</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/MyLawyers.png" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-zoom-in"></i></a>
+                  <!-- <a href="assets/img/portfolio/MyLawyers.png" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-zoom-in"></i></a> -->
+                   <a href="#" 
+                    class="portfolio-lightbox-trigger" 
+                    data-bs-toggle="modal" data-bs-target="#portfolioModal"
+                    data-title="MyLawyers"
+                    data-description="MyLawyers This is an application designed for legal consultations, allowing users to make reservations or book appointments with registered lawyers. Booking is based on the schedules set by lawyers through a separate application. Lawyers in the app are categorized according to different legal fields. Additionally, the application offers document drafting services. The technologies used are:"
+                    data-tech="Flutter & Dart for building a responsive user interface that works on both Android and iOS platforms|Web browser for video and voice calls, enabling direct interaction between doctors and patients.|Firebase Cloud Messaging for push notifications to inform patients or doctors about consultation schedules or prescriptions.|REST-API for communication between the front-end application and the server, handling patient data, schedules, and prescriptions.|Laravel for building the API backend.|Payment Gateway integration with MIDTRANS, BCA, and KREDIVO|UI Slicing from Figma"
+                    data-image="assets/img/portfolio/MyLawyers.png">
+                    <i class="bx bx-zoom-in"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -607,7 +738,16 @@
                 <h4>MyLawyers for Lawyers</h4>
                 <p>Mobile Apps</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/MLawyers.png" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-zoom-in"></i></a>
+                  <!-- <a href="assets/img/portfolio/MLawyers.png" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-zoom-in"></i></a> -->
+                  <a href="#" 
+                    class="portfolio-lightbox-trigger" 
+                    data-bs-toggle="modal" data-bs-target="#portfolioModal"
+                    data-title="MyLawyers for Lawyers"
+                    data-description="MyLawyers for Lawyers is a comprehensive application tailored specifically for legal professionals to facilitate client consultations, manage appointment scheduling, and document legal notes efficiently. The platform supports seamless communication via video and voice calls through web browsers, enhancing remote client interaction and case management. Technologies:"
+                    data-tech="Flutter & Dart for building a responsive user interface that works on both Android and iOS platforms|Web browser for video and voice calls, enabling direct interaction between doctors and patients.|Firebase Cloud Messaging for push notifications to inform patients or doctors about consultation schedules or prescriptions.|REST-API for communication between the front-end application and the server, handling patient data, schedules, and prescriptions.|Laravel for building the API backend.|Payment Gateway integration with MIDTRANS, BCA, and KREDIVO|UI Slicing from Figma"
+                    data-image="assets/img/portfolio/MLawyers.png">
+                    <i class="bx bx-zoom-in"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -859,6 +999,11 @@
     </div>
   </footer><!-- End Footer -->
 
+   <!-- Hidden Modal Popup -->
+  
+
+
+  
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -875,6 +1020,38 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    document.querySelectorAll('.portfolio-lightbox-trigger').forEach(link => {
+      link.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        // Ambil data attribute
+        const title = this.dataset.title;
+        const description = this.dataset.description;
+        const tech = this.dataset.tech.split('|');
+        const image = this.dataset.image;
+
+        // Update modal content
+        document.getElementById('modal-title').textContent = title;
+        document.getElementById('modal-description').textContent = description;
+
+        // Update tech list
+        const techList = document.getElementById('modal-tech');
+        techList.innerHTML = ''; // reset
+        tech.forEach(item => {
+          const li = document.createElement('li');
+          li.textContent = item;
+          techList.appendChild(li);
+        });
+
+        // Update image
+        const imgElem = document.getElementById('modal-image');
+        imgElem.src = image;
+        imgElem.alt = title;
+      });
+  });
+</script>
 
 </body>
 
